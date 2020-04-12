@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>上下滚动</title>
+    <style type="text/css">
+        .colee {
+            background: #333;
+            width: 300px;
+            overflow: hidden;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        img {
+            width: 280px;
+        }
+        
+        li {
+            list-style: none;
+            width: 280px;
+            /*height: 160px;*/
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=demo class="colee">
+
+        <div id=demo1>
+            <!-- 要循环滚动的图片 -->
+            <ul>
+                <li><img src="image/1.jpg" /></li>
+                <li><img src="image/2.jpg" /></li>
+                <li><img src="image/3.jpg" /></li>
+            </ul>
+
+        </div>
+        <div id=demo2 width=1></div>
+    </div>
+    <SCRIPT>
+        var speed = 30 //速度数值越大速度越慢
+        var demo2 = document.getElementById("demo2");
+        var demo = document.getElementById("demo");
+        var demo1 = document.getElementById("demo1");
+        demo2.innerHTML = demo1.innerHTML
+
+        function Marquee() {
+            if (demo2.offsetHeight - demo.scrollTop <= 0)
+                demo.scrollTop -= demo1.offsetHeight;
+            else {
+                demo.scrollTop++;
+            }
+        }
+        var MyMar = setInterval(Marquee, speed)
+        demo.onmouseover = function() {
+            clearInterval(MyMar)
+        }
+        demo.onmouseout = function() {
+            MyMar = setInterval(Marquee, speed)
+        }
+    </script>
+</body>
+
+</html>

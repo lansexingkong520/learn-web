@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>背景样式1</title>
+    <style type="text/css">
+        body {
+            background: #FFF5EE;
+            background-image: url(image/h1.png);
+        }
+        
+        div {
+            padding: 20px;
+            border: 2px solid #666666;
+        }
+        
+        div.part1 {
+            color: white;
+            background-color: #90000a;
+            padding: 20px;
+            background-image: url(image/h2.png);
+        }
+        
+        div.norepeat {
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+        }
+        
+        div.norepeat1 {
+            background-image: url(image/m1.png);
+        }
+        
+        div.repeatx {
+            height: 80px;
+            background-image: url(image/m1.png);
+            background-repeat: repeat-x;
+        }
+        
+        div.norepeat2 {
+            background-image: url(image/m2.png);
+        }
+        
+        div.repeaty {
+            width: 90px;
+            height: 150px;
+            color: brown;
+            background-image: url(image/m2.png);
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="part1">
+        <h1>背景颜色示例</h1>
+    </div>
+    <div class="norepeat norepeat1">背景不重复</div>
+    <div class="repeatx">
+        <h1>水平重复</h1>
+    </div>
+    <div class="norepeat norepeat2">背景不重复</div>
+    <div class="repeaty">
+        <h3>垂直重复</h3>
+    </div>
+</body>
+
+</html>

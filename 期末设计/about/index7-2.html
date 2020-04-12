@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>问卷调查</title>
+    <link type="text/css" rel="stylesheet" href="css/index7.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: url(image/wenjuan7-2-2.png) no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+
+<body leftmargin="0" topmargin="0">
+    <a name="top"><img src="image/yeshou7-2.png" alt="问卷调查" width="100%"></a>
+    <div class="box7-2-1">看了丹丹的个人网站，想和丹丹交朋友吗？</div>
+    <table border="1" align="center" width="510">
+        <tr>
+            <td>
+                <p style="font-size: 20px;" align="center"> 请填写以下表格</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                一个不能割舍的兴趣爱好：
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <textarea cols="50" rows="5" id="write1"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                喜欢听什么类型的歌：
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <textarea cols="50" rows="5" id="write2"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                喜欢的电影或者书籍：
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <textarea cols="50" rows="5" id="write3"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                喜欢在闲暇时间做什么：
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <textarea cols="50" rows="5" id="write4"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                最想去的地方是哪里：
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <textarea cols="50" rows="5" id="write5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    请输入您的QQ号：<input type="text" id="write6">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 12px;" align="center">
+                不想填写请按“主页”键回到主页
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="submit" id="tijiao" value="提交">&nbsp;&nbsp;
+                <input type="button" id="back" value="主页" onclick="goBack()">
+            </td>
+        </tr>
+    </table>
+    <script>
+        $("#tijiao").click(function() {
+            var value;
+            var value1 = document.getElementById("write1").value;
+            var value2 = document.getElementById("write2").value;
+            var value3 = document.getElementById("write3").value;
+            var value4 = document.getElementById("write4").value;
+            var value5 = document.getElementById("write5").value;
+            var value6 = document.getElementById("write6").value;
+            value = "一个不能割舍的兴趣爱好：" + value1 + " 喜欢听什么类型的歌：" + value2 + " 喜欢的电影或者书籍：" + value3 + " 喜欢在闲暇时间做什么：" + value4 + " 最想去的地方是哪里：" + value5 + " QQ号：：" + value6;
+
+            function download(filename, text) {
+                var element = document.createElement('a');
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+                element.setAttribute('download', filename);
+                element.style.display = 'none';
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+            }
+            download("hello.txt", value);
+        })
+
+        function goBack() {
+            window.location.href = "../index.html";
+        }
+    </script>
+    <div><img class="graph1" src="image/yewei.png" alt="快速联系小可爱" width="100%"></div>
+</body>
+
+</html>

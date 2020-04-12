@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>你好</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="write">
+    <textarea cols="60" rows="5" id="write1"></textarea>
+    <input type="button" name="write" value="提交" id="tijiao">
+
+
+    <script>
+        $("#tijiao").click(function() {
+            var value = document.getElementById("write").value;
+            var value1 = document.getElementById("write1").value;
+            var value2 = value + " " + value1;
+
+            function download(filename, text) {
+                var element = document.createElement('a');
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+                element.setAttribute('download', filename);
+
+                element.style.display = 'none';
+                document.body.appendChild(element);
+
+                element.click();
+
+                document.body.removeChild(element);
+            }
+            download("hello.txt", value2);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>查看相册</title>
+    <link type="text/css" rel="stylesheet" href="css/index6.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: url(image/xiangce6.jpg) no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #cccccc;
+        }
+        
+        div#loginDiv {
+            line-height: 3;
+            font-family: 微软雅黑;
+            font-size: 18px;
+            padding: 20px;
+            border: 3px solid #808080;
+            width: 300px;
+            position: fixed;
+        }
+        
+        .log {
+            text-align: center;
+            padding: 0;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginDiv">
+        <div class="log">私人相册 请先登录</div>
+        用户名：<input type="text" id="txtID"><br> 密 &nbsp;&nbsp;&nbsp;码：<input type="password" id="txtPWD"><br>
+        <input type="submit" value="登录" id="denglu">&nbsp;&nbsp;
+        <input type="button" value="主页" onclick="goBack()">&nbsp;&nbsp;
+        <script>
+            $("#denglu").click(function() {
+                var value1 = document.getElementById("txtID").value;
+                var value2 = document.getElementById("txtPWD").value;
+                if (value1 == "1750170309" && value2 == "123456789") {
+                    window.location.href = "index6-1.html";
+                } else {
+                    alert("用户名和密码有误，请重试。");
+                }
+            })
+
+            function goBack() {
+                window.location.href = "../index.html";
+            }
+        </script>
+    </div>
+    <script>
+        var logDiv = document.getElementById("loginDiv");
+        var divW = logDiv.clientWidth;
+        var divH = logDiv.clientHeight;
+        var w = window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth;
+        var h = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+        var x = (w - divW) / 2;
+        var y = (h - divH) / 2;
+        logDiv.style.left = x + "px";
+        logDiv.style.top = y + "px";
+        window.onresize = divCenter;
+
+        function divCenter() {
+            var logDiv = document.getElementById("loginDiv");
+            var divW = logDiv.clientWidth;
+            var divH = logDiv.clientHeight;
+            var w = window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth;
+            var h = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+            var x = (w - divW) / 2;
+            var y = (h - divH) / 2;
+            logDiv.style.left = x + "px";
+            logDiv.style.top = y + "px";
+        }
+    </script>
+</body>
+
+</html>

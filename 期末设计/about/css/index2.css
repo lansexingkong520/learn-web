@@ -1,0 +1,110 @@
+img.graph1 {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.box1 {
+    position: fixed;
+    top: 0px;
+    left: 5px;
+    margin: auto;
+    padding: 0px;
+}
+
+.box1 a {
+    color: #761596;
+    text-decoration: none;
+}
+
+
+/*2-1的设计*/
+
+.jieshaok1 {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+p {
+    font-family: 楷体;
+    font-size: 22px;
+}
+
+span {
+    font-family: 微软雅黑;
+    color: saddlebrown;
+}
+
+.zp1 {
+    width: 100px;
+    height: 140px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 540px;
+}
+
+
+/*2-2的设计*/
+
+.box2-2-1 {
+    width: 850px;
+    height: 815px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-bottom: 10px;
+    background-color: #FFF0F5;
+}
+
+.box2-2-2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #761596;
+}
+
+.box2-2-3 {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 楷体;
+    color: #761596;
+}
+
+.box2-2-4 {
+    margin: 10px auto;
+    margin-top: 20px;
+    width: 800px;
+    font-family: 楷体;
+    font-size: 22px;
+    color: #761596;
+}
+
+.box2-2-4-1 {
+    font-family: 微软雅黑;
+    color: saddlebrown;
+    font-size: 22px;
+}
+
+.box2-2-5-1 {
+    position: absolute;
+    left: 580px;
+    top: 670px;
+    text-align: center;
+    color: #761596;
+}
+
+.box2-2-5-2 {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.box2-2-5-3 {
+    position: absolute;
+    right: 360px;
+    margin-top: 10px;
+}

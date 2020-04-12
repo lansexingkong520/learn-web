@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <form name="form1" method="POST" action="">
+        <input type="text" name="textbox1">
+        <input type="text" name="textbox1">
+        <input type="button" name="btn1" value="按钮" onclick="yes(this.form.textbox1.value)">
+    </form>
+    <script>
+        function yes(data) {
+            var strFile = "D:\\text.txt";
+            var objFSO = new ActiveXObject("Scripting.FileSystemObject");
+            if (!objFSO.FileExists(strFile)) {
+                var objStream = objFSO.CreateTextFile(strFile, true);
+                objStream.write(data);
+                objStream.close();
+                alert("ok");
+            } else {
+                alert("文本文件：" + strFile + "已经存在<br>");
+            }
+        }
+
+        function savefile(SaveFileName, data) {
+            var newWin = window.open("", "DownLoad", "");
+            newWin.document.write(data);
+            newWin.document.execCommand('Saveas', true, SaveFileName);
+            newWin.window.close();
+        }
+    </script>
+</body>
+
+</html>

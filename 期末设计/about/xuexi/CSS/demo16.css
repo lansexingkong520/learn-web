@@ -1,0 +1,51 @@
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: #666666;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: brown;
+    text-decoration: underline;
+}
+
+a.menu {
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+a.menu:link,
+a.menu:visited,
+a.menu:active {
+    color: white;
+    background-color: #90000a;
+}
+
+a.menu:hover {
+    color: yellow;
+    text-decoration: underline;
+    background-color: #336699;
+}
+
+a.none:visited {
+    color: #9932CC;
+    text-decoration: underline;
+}
+
+a.none:hover {
+    color: #87CEFA;
+    text-decoration: underline;
+    font-size: 20px;
+}

@@ -1,0 +1,141 @@
+.nav {
+    width: 1001px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    position: relative;
+}
+
+.nav ul li {
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    width: 135px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #90000a;
+    display: block;
+    padding: 0px 10px;
+    background: #FFFFFF;
+}
+
+.nav ul li a:hover {
+    color: #FFFFFF;
+    background: #90000a
+}
+
+.nav ul li ul {
+    position: absolute;
+    display: none;
+    width: 114px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li ul li {
+    float: none;
+    line-height: 40px;
+    text-align: center;
+    width: 114px;
+}
+
+.nav ul li ul li a {
+    width: 100%;
+}
+
+.nav ul li ul li a:hover {
+    background-color: #90000a;
+}
+
+.nav ul li:hover ul {
+    display: block
+}
+
+.menu {
+    clear: both;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+ul.announce {
+    list-style-image: url(../image/laba.gif);
+}
+
+.level ul li.yang1 {
+    color: #FFFFFF;
+    background: #7a8523;
+    margin-bottom: 15px;
+    padding: 10px 28px;
+    list-style: none;
+    font: 16px 宋体;
+}
+
+.level ul li.yang2 {
+    color: #FFFFFF;
+    background: #006a91;
+    margin-bottom: 15px;
+    padding: 10px 28px;
+    list-style: none;
+    font: 16px 宋体;
+}
+
+.level ul li.yang3 {
+    color: #FFFFFF;
+    background: #d5641c;
+    margin-bottom: 15px;
+    padding: 10px 28px;
+    list-style: none;
+    font: 16px 宋体;
+}
+
+img.graph1 {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.box1 {
+    position: fixed;
+    top: 0px;
+    left: 5px;
+    margin: auto;
+    padding: 0px;
+}
+
+.box2 {
+    float: left;
+    margin: auto;
+    padding: 0px;
+}
+
+.box3 {
+    float: right;
+    position: relative;
+    right: 5px;
+    margin: auto;
+    padding: 0px;
+}
+
+.box3 a {
+    text-decoration: none;
+    color: rgb(201, 194, 194);
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>音乐分享</title>
+    <link type="text/css" rel="stylesheet" href="css/index5.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+</head>
+
+<body leftmargin="0" topmargin="0">
+    <a name="top"><img src="image/yeshou5-3.png" alt="音乐分享" width="100%"></a>
+    <div class="box1"><a href="../index.html">返回主页</a></div>
+    <table width="900" border="0" align="center" bgcolor="#FFFFFF" cellspacing="10">
+        <tr>
+            <td>
+                <table width="400" bgcolor="#f8f8f8" cellspacing="" cellpadding="3">
+                    <tr>
+                        <td>
+                            <div id="flash" class="colee">
+                                <img src="image/yinyue5-3-1.jpg">
+                                <img src="image/yinyue5-3-2.jpg">
+                                <img src="image/yinyue5-3-4.jpg">
+                                <img src="image/yinyue5-3-5.jpg">
+                            </div>
+                            <script>
+                                var count = 0; //定义全局变量count来表示当前图片
+                                function run() {
+                                    count++;
+                                    count = count == 5 ? 0 : count;
+                                    $('#flash img').eq(count).fadeIn(300).siblings('img').fadeOut(300); //利用eq来遍历img，并将count位图片显示，其他兄弟元素隐藏，fadeIN位淡入显示，fadeOut为淡出
+                                }
+                                var timer = setInterval(run, 1000 * 5); //设置定时器
+                                $('#flash').hover(function() { //设置鼠标移入移出事件
+                                    clearInterval(timer);
+                                }, function() {
+                                    timer = setInterval(run, 1000 * 4);
+                                })
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table width="450" bgcolor="#FFFFFF" border="0">
+                    <tr>
+                        <div class="box2">我喜欢</div>
+                        <div class="box3">时长</div>
+                        <div class="menu">
+                            <audio class="song"></audio>
+                            <hr>
+                            <ul class="announce3">
+                                <li data-json="mp3/花僮 - 一抹桃花.mp3">
+                                    <div class="sort">1. 花僮 - 一抹桃花</div>
+                                </li>
+                                <li data-json="mp3/小石头和孩子们 _ 韩依霖 - 归寻.mp3">
+                                    <div class="sort">2. 小石头和孩子们 _ 韩依霖 - 归寻</div>
+                                </li>
+                                <li data-json="mp3/周笔畅 - 岁月神偷.mp3">
+                                    <div class="sort">3. 周笔畅 - 岁月神偷</div>
+                                </li>
+                                <li data-json="mp3/张艺兴 - 祈愿.mp3">
+                                    <div class="sort">4. 张艺兴 - 祈愿</div>
+                                </li>
+                                <li data-json="mp3/慕寒 _ 马里奥 - 盛世回首.mp3">
+                                    <div class="sort">5. 慕寒 _ 马里奥 - 盛世回首</div>
+                                </li>
+                                <li data-json="mp3/兔裹煎蛋卷 - 鱼玄机.mp3">
+                                    <div class="sort">6. 兔裹煎蛋卷 - 鱼玄机</div>
+                                </li>
+                                <li data-json="mp3/权三岁 - 起风了.mp3">
+                                    <div class="sort">7. 权三岁 - 起风了</div>
+                                </li>
+                                <li data-json="mp3/张卫健 - 真英雄.mp3">
+                                    <div class="sort">8. 张卫健 - 真英雄</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            jQuery("li").click(function() { /*使用jQuery和$达到的目的是相同的*/
+                                var src = $(this).attr("data-json");
+                                // alert(src);
+                                var song = document.getElementsByClassName("song")['0'];
+                                // alert(song);
+                                song.src = src;
+                                song.play();
+                                $("li").click(function() {
+                                    if (!song.paused) {
+                                        song.pause();
+                                    } else {
+                                        song.play();
+                                    }
+                                })
+
+                            })
+                        </script>
+                        <div class="musictime1">
+                            <ul type="none">
+                                <li>03:16</li>
+                                <li>03:21</li>
+                                <li>04:10</li>
+                                <li>03:29</li>
+                                <li>04:08</li>
+                                <li>03:24</li>
+                                <li>05:23</li>
+                                <li>04:24</li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="880" height="100" border="0" align="center" bgcolor="#bdf1fc" topmargin="0" class="tab">
+        <tr>
+            <td>门店音乐</td>
+            <td>节奏控</td>
+            <td>运动</td>
+            <td>官方歌单</td>
+            <td>网络歌曲</td>
+            <td>短视频热歌</td>
+        </tr>
+        <tr>
+            <td>KTV金曲</td>
+            <td>DJ神曲</td>
+            <td>经典老歌</td>
+            <td>睡前</td>
+            <td>轻音乐</td>
+            <td>全部</td>
+        </tr>
+    </table>
+    <table width="900" border="0" align="center" bgcolor="#FFFFFF" cellspacing="10">
+        <tr>
+            <td>
+                <table width="450" bgcolor="#FFFFFF" border="0">
+                    <tr>
+                        <div class="box2">徐良 许嵩 汪苏泷</div>
+                        <div class="box3">时长</div>
+                        <div class="menu">
+                            <audio class="song1"></audio>
+                            <hr>
+                            <ul class="announce3">
+                                <li data-json="mp3/徐良 - 北京巷弄.mp3">
+                                    <div class="sort">1. 徐良 - 北京巷弄</div>
+                                </li>
+                                <li data-json="mp3/徐良 - 那时雨.mp3">
+                                    <div class="sort">2. 徐良 - 那时雨</div>
+                                </li>
+                                <li data-json="mp3/许嵩 - 幻听.mp3">
+                                    <div class="sort">3. 许嵩 - 幻听</div>
+                                </li>
+                                <li data-json="mp3/许嵩 - 雅俗共赏.mp3">
+                                    <div class="sort">4. 许嵩 - 雅俗共赏</div>
+                                </li>
+                                <li data-json="mp3/许嵩 - 有何不可.mp3">
+                                    <div class="sort">5. 许嵩 - 有何不可</div>
+                                </li>
+                                <li data-json="mp3/汪苏泷 _ BY2 - 有点甜.mp3">
+                                    <div class="sort">6. 汪苏泷 _ BY2 - 有点甜</div>
+                                </li>
+                                <li data-json="mp3/汪苏泷 - 桃花扇.mp3">
+                                    <div class="sort">7. 汪苏泷 - 桃花扇</div>
+                                </li>
+                                <li data-json="mp3/汪苏泷 _ 徐良 - 后会无期.mp3">
+                                    <div class="sort">8. 汪苏泷 _ 徐良 - 后会无期</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            jQuery("li").click(function() { /*使用jQuery和$达到的目的是相同的*/
+                                var src = $(this).attr("data-json");
+                                // alert(src);
+                                var song1 = document.getElementsByClassName("song1")['0'];
+                                // alert(song);
+                                song1.src = src;
+                                song1.play();
+                                $("li").click(function() {
+                                    if (!song1.paused) {
+                                        song1.pause();
+                                    } else {
+                                        song1.play();
+                                    }
+                                })
+
+                            })
+                        </script>
+                        <div class="musictime2">
+                            <ul type="none">
+                                <li>03:53</li>
+                                <li>03:34</li>
+                                <li>04:33</li>
+                                <li>04:09</li>
+                                <li>04:01</li>
+                                <li>03:55</li>
+                                <li>04:17</li>
+                                <li>03:31</li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table width="400" bgcolor="#f8f8f8" cellspacing="5" cellpadding="3">
+                    <tr>
+                        <td>
+                            <div id="flash1" class="colee1">
+                                <img src="image/yinyue5-3-10.jpg">
+                                <img src="image/yinyue5-3-11.jpg">
+                                <img src="image/yinyue5-3-12.jpg">
+                                <img src="image/yinyue5-3-13.png">
+                            </div>
+                            <script>
+                                var count = 0; //定义全局变量count来表示当前图片
+                                function run() {
+                                    count++;
+                                    count = count == 5 ? 0 : count;
+                                    $('#flash1 img').eq(count).fadeIn(300).siblings('img').fadeOut(300); //利用eq来遍历img，并将count位图片显示，其他兄弟元素隐藏，fadeIN位淡入显示，fadeOut为淡出
+                                }
+                                var timer = setInterval(run, 1000 * 7); //设置定时器
+                                $('#flash1').hover(function() { //设置鼠标移入移出事件
+                                    clearInterval(timer);
+                                }, function() {
+                                    timer = setInterval(run, 1000 * 4);
+                                })
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div><img class="graph1" src="image/yewei.png" alt="快速联系小可爱" width="100%"></div>
+</body>
+
+</html>

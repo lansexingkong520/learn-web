@@ -1,0 +1,91 @@
+body {
+    margin: 15px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.container div {
+    margin: 15px;
+    border: 1px dashed black;
+}
+
+.container p {
+    border: 1px dashed black;
+    background-color: #f1bade;
+}
+
+.box1 {
+    background-color: #a9d6ff;
+    padding: 10px;
+}
+
+.box1-1 {
+    background-color: #a9d6ff;
+    padding: 10px;
+    float: left;
+}
+
+.box1-1-1 {
+    background-color: #a9d6ff;
+    padding: 10px;
+    float: right;
+}
+
+.box2 {
+    background-color: #dddddd;
+    padding: 20px;
+}
+
+.box2-2 {
+    background-color: #dddddd;
+    padding: 20px;
+    float: left;
+}
+
+.box2-2-2 {
+    background-color: #dddddd;
+    padding: 20px;
+    float: left;
+}
+
+.box3 {
+    background-color: #ffffaa;
+    padding: 30px;
+}
+
+.box3-3 {
+    background-color: #ffffaa;
+    padding: 30px;
+    float: right;
+}
+
+.box3-3-3 {
+    background-color: #ffffaa;
+    padding: 30px;
+    float: left;
+}
+
+.container p.level1 {
+    clear: left;
+}
+
+div.clearBoth {
+    border: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.guding {
+    position: fixed;
+    top: 0px;
+    left: 5px;
+    margin: auto;
+    padding: 0px;
+    font-size: 20px;
+}

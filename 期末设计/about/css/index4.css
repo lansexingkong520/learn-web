@@ -1,0 +1,204 @@
+img.graph1 {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.box1 {
+    position: fixed;
+    top: 0px;
+    left: 5px;
+    margin: auto;
+    padding: 0px;
+}
+
+.box1 a {
+    color: #761596;
+    text-decoration: none;
+}
+
+
+/*4-1的设计*/
+
+.nav {
+    width: 1001px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    position: relative;
+}
+
+.nav ul li {
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    width: 133px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #761596;
+    display: block;
+    padding: 0px 10px;
+    background: #FFFFFF;
+}
+
+.nav ul li a:hover {
+    color: #FFFFFF;
+    background: #761596;
+}
+
+.nav ul li ul {
+    position: absolute;
+    display: none;
+    width: 114px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li ul li {
+    float: none;
+    line-height: 40px;
+    text-align: center;
+    width: 113px;
+}
+
+.nav ul li ul li a {
+    width: 100%;
+}
+
+.nav ul li ul li a:hover {
+    background-color: #761596;
+}
+
+.nav ul li:hover ul {
+    display: block
+}
+
+
+/*控制图片滚动*/
+
+.colee {
+    width: 520px;
+    overflow: hidden;
+    height: 250px;
+    margin: 0 auto;
+}
+
+p.co {
+    width: 520px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.co img {
+    width: 520px;
+}
+
+
+/*网页中所有超链接的控制*/
+
+.menu {
+    clear: both;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*网页中超链接前的小图标*/
+
+ul.announce {
+    list-style-image: url(image/xuexi.gif);
+}
+
+
+/*超链接位置设置*/
+
+.box2 {
+    float: left;
+    margin: auto;
+    padding: 0px;
+}
+
+.box3 {
+    float: right;
+    position: relative;
+    right: 5px;
+    margin: auto;
+    padding: 0px;
+}
+
+.box3 a {
+    text-decoration: none;
+    color: rgb(201, 194, 194);
+}
+
+
+/*4-3吃的页面*/
+
+.colee4-3-1 {
+    width: 900px;
+    overflow: hidden;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.colee4-3-2 {
+    width: 900px;
+    overflow: hidden;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.co4-3-2 img {
+    height: 160px;
+}
+
+.box4-3-2 {
+    position: absolute;
+    left: 610px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.box4-3-3 {
+    position: absolute;
+    margin: auto;
+    left: 510px;
+    margin-top: 10px;
+    width: 500px;
+    font-size: 22px;
+    font-family: 楷体;
+    color: saddlebrown;
+    text-align: center;
+}
+
+.box4-3-4 {
+    position: absolute;
+    left: 950px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+ul.announce3 {
+    list-style-image: url(image/xihuan.gif);
+}

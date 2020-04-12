@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <tr>
+        <td style="height:12px; padding-top: 0px; width:100px"><span style="font-size:12px"><b>营业执照
+
+           </b></span>
+        </td>
+
+        <td style="height:12px; padding-top: 0px; width:300px">
+            <img style=border:0;margin-top:0px;   src="about/image/mubiao5-1-1.png"   id="file2img"    width="100" height="100"   />
+        </td>
+    </tr>
+    <script>
+        $("#file2img").bind("click", function() {
+            var width = $(this).width();   
+            if (width == 100)    {      
+                $(this).width(300);      
+                $(this).height(300);   
+            }   
+            else    {      
+                $(this).width(100);      
+                $(this).height(100);   
+            }
+
+        })
+    </script>
+</body>
+
+</html>
