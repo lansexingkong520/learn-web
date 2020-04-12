@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录界面在浏览器中居中</title>
+    <style type="text/css">
+        div#loginDiv {
+            line-height: 3;
+            font-family: 微软雅黑;
+            font-size: 18px;
+            padding: 20px;
+            border: 3px solid #808080;
+            width: 300px;
+            position: fixed;
+        }
+        
+        .box1 {
+            position: fixed;
+            top: 0px;
+            right: 25px;
+            margin: auto;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"><a href="index.html">返回主页</a></div>
+    <div id="loginDiv">
+        用户名：<input type="text" id="txtID"><br> 密 码：<input type="password" id="txtPWD"><br>
+        <input type="button" value="登录">&nbsp;&nbsp;
+        <input type="reset" value="重置">
+    </div>
+</body>
+<script>
+    var logDiv = document.getElementById("loginDiv");
+    var divW = logDiv.clientWidth;
+    var divH = logDiv.clientHeight;
+    var w = window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth;
+    var h = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+    var x = (w - divW) / 2;
+    var y = (h - divH) / 2;
+    logDiv.style.left = x + "px";
+    logDiv.style.top = y + "px";
+    window.onresize = divCenter;
+
+    function divCenter() {
+        var logDiv = document.getElementById("loginDiv");
+        var divW = logDiv.clientWidth;
+        var divH = logDiv.clientHeight;
+        var w = window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth;
+        var h = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+        var x = (w - divW) / 2;
+        var y = (h - divH) / 2;
+        logDiv.style.left = x + "px";
+        logDiv.style.top = y + "px";
+    }
+</script>
+
+</html>

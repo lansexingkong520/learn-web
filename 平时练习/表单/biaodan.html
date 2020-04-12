@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录界面</title>
+    <style>
+        a:visited {
+            color: #9932CC;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #87CEFA;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+        
+        a.none {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="300" height="10" border="0" bgcolor="#FFE4C4" align="center" cellspacing="10">
+        <tr>
+            <td>
+                用户登录
+            </td>
+        </tr>
+    </table>
+    <table width="300" height="150" border="0" bgcolor="#f8f8f8" align="center" cellspacing="10">
+
+        <tr>
+            <td>
+                <form>
+                    用户名：<input type="text" name="txtName" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    密&nbsp;&nbsp;&nbsp;码：<input type="password" name="txtPWD" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    验证码：<input type="text" name="txtYan" size="9" />&nbsp;<input type="image" name="yzmImage" src="image/yzm.png" height="25" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="submit" id="btnSubmit" value="登录">&nbsp;
+                <input type="reset" id="btnReset" value="首页">
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1" align="center" width="510" style="background-image: url(image/bg.jpg);background-size: auto;">
+        <tr>
+            <td>
+                <p style="font-size: 20px;" align="center"> 请认真填写您的注册信息</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    请输入您的姓名：<input type="text" name="txtName" maxlength="10">&nbsp;(限10个字符以内)
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    请输入您的密码：<input type="password" name="txtPWD" maxlength="15">&nbsp;(15个字符以内)
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    请选择您的性别：<label><input type="radio" name="radDemo" value="男">男</label>&nbsp;<label><input type="radio" name="radDemo" value="女">女</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    您的住址：<input type="text" name="txtName" size="48">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    您的籍贯：
+                    <select name="nativePlace">
+                        <option value="北京市">北京市</option>
+                        <option value="上海市">上海市</option>
+                        <option value="天津市">天津市</option>
+                        <option value="重庆市">重庆市</option>
+                        <option value="四川省">四川省</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    请选择您的爱好：
+                    <label><input type="checkbox" name="habit" value="运动">运动</label>&nbsp;
+                    <label><input type="checkbox" name="habit" value="音乐">音乐</label>&nbsp;
+                    <label><input type="checkbox" name="habit" value="旅游">旅游</label>&nbsp;
+                    <label><input type="checkbox" name="habit" value="IT业">IT业</label>&nbsp;
+                    <label><input type="checkbox" name="habit" value="其他">其他</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form method="POST" action="" enctype="multipart/form-data">
+                    您的照片：<input type="text" name="txtDesc">
+                    <input type="file" name="image">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    请您留言：
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <textarea cols="60" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="submit" id="btnSubmit" value="提交">&nbsp;
+                <input type="reset" id="btnReset" value="重填">
+            </td>
+        </tr>
+    </table>
+    <p>
+        <a class="none" href="index.html " title="主页 ">主页</a>&nbsp;|
+        <a class="none" href="biaoge.html " target="_blank" title="表格 ">表格</a>&nbsp;|&nbsp;表单&nbsp;|
+        <a class="none" href="xzq.html" title="CSS选择器">CSS的选择器</a>&nbsp;|
+        <a class="none" href="CSSjctx.html" title="CSS的继承特性">CSS的继承特性</a>&nbsp;|
+        <a class="none" href="wenben.html" title="文本样式">文本样式</a>
+    </p>
+</body>

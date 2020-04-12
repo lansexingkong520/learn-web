@@ -1,0 +1,45 @@
+div {
+    color: blue;
+}
+
+p {
+    font-family: 微软雅黑;
+}
+
+span {
+    font-family: 楷体;
+    font-size: 25px;
+}
+
+.size25 {
+    color: red;
+    font-size: 25px;
+}
+
+#example {
+    font-weight: bold;
+}
+
+body {
+    background-color: bisque;
+}
+
+html {
+    font-size: 12px;
+}
+
+div1 {
+    font-size: 2em;
+}
+
+div#main {
+    width: 600px;
+    height: 300px;
+    border: 2px dashed #804000;
+}
+
+p#main {
+    width: 50%;
+    height: 50%;
+    border: 1px dashed #666;
+}

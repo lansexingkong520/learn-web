@@ -1,0 +1,75 @@
+p {
+    font-size: 1.4rem;
+}
+
+p.ex1 {
+    font: italic bold 24px/2rem Courier, "Courier New", Monospace;
+}
+
+p.ex2 {
+    font-family: 微软雅黑，黑体，楷体;
+    font-size: 1.8rem;
+}
+
+div {
+    font: 20px, 微软雅黑;
+    color: red;
+    border: 5px solid;
+}
+
+div.one {
+    direction: rtl;
+}
+
+div.two {
+    direction: ltr;
+}
+
+p.number {
+    line-height: 26px;
+}
+
+p.small {
+    line-height: 60%;
+}
+
+p.middle {
+    line-height: 1.5;
+}
+
+p.big {
+    line-height: 300%;
+}
+
+h2.narrow {
+    letter-spacing: -5px;
+}
+
+h2.wide {
+    letter-spacing: 1em;
+}
+
+p.wide {
+    letter-spacing: 25px;
+}
+
+h1,
+h3 {
+    border: 1px solid #999;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3.left {
+    text-align: left;
+}
+
+h3.justify {
+    text-align: justify;
+}
+
+h3.right {
+    text-align: right;
+}

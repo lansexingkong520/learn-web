@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>修改DOM节点</title>
+    <style type="text/css">
+        .box1 {
+            position: fixed;
+            top: 0px;
+            right: 25px;
+            margin: auto;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"><a href="index.html">返回主页</a></div>
+    <div id="main">
+        <div>我是第一个节点</div>
+        <p>我是第二个节点</p>
+        <span>我是第三个节点</span>
+    </div>
+</body>
+<script>
+    var main = document.getElementById('main');
+    var mainChild = main.children;
+    var link1 = mainChild[0];
+    link1.style.backgroundColor = "#FFF5EE";
+    mainChild[2].innerHTML = "我对第三个节点进行了部分修改，并且删除了第二个节点。";
+    mainChild[1].remove();
+    var ele = document.createElement("div");
+    ele.innerHTML = "新增加了第四个节点";
+    main.appendChild(ele);
+</script>
+
+</html>

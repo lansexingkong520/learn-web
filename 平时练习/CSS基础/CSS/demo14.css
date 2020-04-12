@@ -1,0 +1,16 @@
+p.width {
+    text-align: center;
+    font: 22px 宋体;
+}
+
+p.e1 {
+    font: 12px 宋体;
+    text-align: center;
+}
+
+p.e2 {
+    font: 19px 楷体;
+    text-indent: 2em;
+    line-height: 1.5;
+    text-align: justify;
+}

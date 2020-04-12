@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>列表与表格样式</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav {
+            width: 1001px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .nav ul {
+            list-style: none;
+            position: relative;
+        }
+        
+        .nav ul li {
+            float: left;
+            line-height: 40px;
+            text-align: center;
+            width: 143px;
+        }
+        
+        .nav ul li a {
+            text-decoration: none;
+            color: #90000a;
+            display: block;
+            padding: 0px 10px;
+        }
+        
+        .nav ul li a:hover {
+            color: #FFFFFF;
+            background: #90000a
+        }
+        
+        .nav ul li ul {
+            position: absolute;
+            display: none;
+            width: 122px;
+        }
+        
+        .nav ul li ul li {
+            float: none;
+            line-height: 40px;
+            text-align: center;
+            width: 122px;
+        }
+        
+        .nav ul li ul li a {
+            width: 100%;
+        }
+        
+        .nav ul li ul li a:hover {
+            background-color: #90000a;
+        }
+        
+        .nav ul li:hover ul {
+            display: block
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="http://jw.cdu.edu.cn" target="_blank">教务处首页</a></li>
+            <li><a href="http://zhuoyue.cdu.edu.cn/index.aspx" target="_blank">本站首页</a></li>
+            <li>
+                <a href="http://zhuoyue.cdu.edu.cn/Infors/NewsIndex.aspx?typeID=6" target="_blank">专业认证</a>
+                <ul>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1770" target="_blank">认证标准</a></li>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1771" target="_blank">认证程序</a></li>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1769" target="_blank">认证知识</a></li>
+                </ul>
+            </li>
+            <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsIndex.aspx?typeID=2" target="_blank">管理文件</a></li>
+            <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsIndex.aspx?typeID=4" target="_blank">计划简介</a>
+                <ul>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1779" target="_blank">教师培养</a></li>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1778" target="_blank">人才意见</a></li>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1776" target="_blank">通用标准</a></li>
+                </ul>
+            </li>
+            <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsIndex.aspx?typeID=1" target="_blank">培养方案</a>
+                <ul>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1738" target="_blank">学前教育</a></li>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1737" target="_blank">土木工程</a></li>
+                    <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsShow.aspx?id=1731" target="_blank">软件工程</a></li>
+                </ul>
+            </li>
+            <li><a href="http://zhuoyue.cdu.edu.cn/Infors/NewsIndex.aspx?typeID=3" target="_blank">资料下载</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

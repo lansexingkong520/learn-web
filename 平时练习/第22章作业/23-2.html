@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>23</title>
+    <script>
+        document.write("转义符示例：" + '<br>');
+        var str1 = "\"Chengdu\"";
+        var str2 = "University";
+        var str3 = str1 + " " + str2;
+        var str4 = str1 + "\&" + str2;
+        document.write(str3 + '<br>');
+        document.write(str4 + '<br>');
+        var a;
+        alert(a);
+        var b;
+        b = String.noSuchProperty;
+        document.write("undefined数据类型的判断：" + '<br>');
+        var c = "";
+        var d;
+        if (c === undefined)
+            document.write("c is undefined");
+        if (d === undefined)
+            document.write("d is undefined");
+        document.write("空类型：" + '<br>');
+        var e = null;
+        var f;
+        document.write(e + '<br>');
+        document.write(f + '<br>');
+        document.write(e == f + '<br>');
+        document.write("各种类型的toString()：" + '<br>');
+        var agree = false;
+        document.write(agree.toString() + '<br>');
+        var g = 10;
+        var h = 10.3;
+        document.write(g.toString() + '<br>');
+        document.write(h.toString() + '<br>');
+        var i = 10.125;
+        document.write(i.toString(2) + '<br>');
+        document.write(i.toString(8) + '<br>');
+        document.write(i.toString() + '<br>');
+        document.write(i.toString(10) + '<br>');
+        document.write(i.toString(16) + '<br>');
+        document.write("字符串转换为浮点数：" + '<br>');
+        var j, k;
+        j = parseInt("blue123.4red");
+        document.write("j=" + j + '<br>');
+        j = parseInt("123.4red");
+        document.write("j=" + j + '<br>');
+        j = parseInt("0xA");
+        document.write("j=" + j + '<br>');
+        j = parseInt("56.9");
+        document.write("j=" + j + '<br>');
+        j = parseInt("red");
+        document.write("j=" + j + '<br>');
+        j = parseInt("10", 2);
+        document.write("j=" + j + '<br>');
+        j = parseInt("10", 8);
+        document.write("j=" + j + '<br>');
+        j = parseInt("10", 10);
+        document.write("j=" + j + '<br>');
+        j = parseInt("AF", 16);
+        document.write("j=" + j + '<br>');
+        k = parseFloat("12345red");
+        document.write("k=" + k + '<br>');
+        k = parseFloat("0xA");
+        document.write("k=" + k + '<br>');
+        k = parseFloat("11.2");
+        document.write("k=" + k + '<br>');
+        k = parseFloat("11.22.33");
+        document.write("k=" + k + '<br>');
+        k = parseFloat("0102");
+        document.write("k=" + k + '<br>');
+        k = parseFloat("red");
+        document.write("k=" + k + '<br>');
+        document.write("强制类型转换：" + '<br>');
+        var b1 = Boolean("");
+        document.write("b1=" + b1 + '<br>');
+        var b2 = Boolean("hello");
+        document.write("b2=" + b2 + '<br>');
+        var b1 = Boolean(50);
+        document.write("b1=" + b1 + '<br>');
+        var b1 = Boolean(null);
+        document.write("b1=" + b1 + '<br>');
+        var b1 = Boolean(0);
+        document.write("b1=" + b1 + '<br>');
+        var b1 = Boolean(new Object());
+        document.write("b1=" + b1 + '<br>');
+        document.write(Number(false) + '<br>');
+        document.write(Number(true) + '<br>');
+        document.write(Number(undefined) + '<br>');
+        document.write(Number(null) + '<br>');
+        document.write(Number("1.2") + '<br>');
+        document.write(Number("12") + '<br>');
+        document.write(Number("1.2.3") + '<br>');
+        document.write(Number(new Object()) + '<br>');
+        var oNull = null;
+        document.write(String(oNull) + '<br>');
+        document.write(oNull.toString() + '<br>');
+    </script>
+    <style type="text/css">
+        .box1 {
+            position: fixed;
+            top: 0px;
+            right: 25px;
+            margin: auto;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"><a href="index.html">返回主页</a></div>
+</body>
+
+</html>

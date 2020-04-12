@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>24-3:石头剪刀布</title>
+    <script>
+        document.write("<h2>剪刀、石头、布 游戏：</h2>");
+        document.write("系统随机出一个动作，你猜一个动作，看谁赢！" + "<br>");
+        document.write("请出拳：");
+
+        function data() {
+            var people = document.getElementById("sjb").value;
+            var peo;
+            if (people == "0") {
+                peo = 0;
+            } else if (people == "1") {
+                peo = 1;
+            } else if (people == "2") {
+                peo = 2;
+            }
+            return peo;
+        }
+
+        function play() {
+            var com = parseInt(Math.random() * 3);
+            var peo = data();
+            if (peo == com) {
+                switch (com) {
+                    case 0:
+                        return alert("电脑出：石头；你出：石头     " + "平局！");
+                    case 1:
+                        return alert("电脑出：剪刀；你出：剪刀     " + "平局！");
+                    case 2:
+                        return alert("电脑出：布；你出：布     " + "平局！");
+                }
+            } else if ((peo == 0 && com == 1) || (peo == 1 && com == 2) || (peo == 2 && com == 0)) {
+                switch (com) {
+                    case 0:
+                        return alert("电脑出：石头；你出：布     " + "你赢了！");
+                    case 1:
+                        return alert("电脑出：剪刀；你出：石头     " + "你赢了！");
+                    case 2:
+                        return alert("电脑出：布；你出：剪刀     " + "你赢了！");
+                }
+            } else {
+                switch (com) {
+                    case 0:
+                        return alert("电脑出：石头；你出：剪刀     " + "电脑赢了！");
+                    case 1:
+                        return alert("电脑出：剪刀；你出：布     " + "电脑赢了！");
+                    case 2:
+                        return alert("电脑出：布；你出：石头     " + "电脑赢了！");
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .box1 {
+            position: fixed;
+            top: 0px;
+            right: 25px;
+            margin: auto;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"><a href="index.html">返回主页</a></div>
+    <form>
+        <select id="sjb">
+        <option value="0">石头</option>
+        <option value="1">剪刀</option>
+        <option value="2">布</option>
+        <input type="button"value="开始" onclick="play()">
+    </select>
+    </form>
+</body>
+
+</html>

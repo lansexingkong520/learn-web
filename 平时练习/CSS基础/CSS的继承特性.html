@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS的继承特性</title>
+    <!--内部样式-->
+    <style type="text/css">
+        body {
+            background-color: salmon;
+        }
+    </style>
+    <!--外部样式-->
+    <link rel="stylesheet" type="text/css" href="CSS/demo11-1.css">
+
+</head>
+
+<body>
+    <div>
+        div中的文字，应该是应用div样式“蓝色”
+        <p class="example">div中的子元素p</p>
+        <span>子元素span<font>及嵌套font</font>，会怎样？</span>
+    </div>
+    <hr>
+    <div>
+        div中的文字，应该是应用div样式“蓝色”
+        <p class="size25" id="example">层叠特性</p>
+        <span>子元素span
+            <font>及嵌套font</font>，会怎样？
+        </span>
+    </div>
+    <hr>
+    <h3>测试！外部样式放在内部样式后面，内部样式将被外部样式覆盖。（测试点是页面背景）</h3>
+    <hr>
+    <h1>CSS的继承特性</h1>
+    <p>欢迎学习CSS，这里为您提供丰富的学习内容</p>
+    <ul type="disc">
+        <li>在这里，你可以学到：
+            <ul type="circle">
+                <li>HTML</li>
+                <li>CSS
+                    <ul type="square" class="size25">
+                        <li>CSS初级</li>
+                        <li>CSS中级</li>
+                        <li>CSS高级</li>
+                    </ul>
+                </li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>你还可以学到：
+            <ol type="1" start="1" id="example">
+                <li>Flash</li>
+                <li>Dreamweaver</li>
+                <li>PhotoShop</li>
+            </ol>
+        </li>
+    </ul>
+    <p>如果您有任何问题，欢迎联系我们</p>
+    <hr> 这是body的文字，大小为12px
+    <br>
+    <div1>父div，大小为2em<br>
+        <div1>嵌套div，大小为2em<br>
+            <div1>第三层div，大小为2em<br></div1>
+        </div1>
+    </div1>
+    <hr>
+    <div id="main">
+        这是容器，固定宽度600px、高度400px
+        <p id="main">嵌套p元素，相对宽度50%。高度50%</p>
+    </div>
+</body>
+
+</html>

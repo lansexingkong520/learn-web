@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>23部分示例</title>
+    <script>
+        var number1 = 1;
+        var number2 = 1.0;
+        document.write(number1 + '<br>');
+        document.write(number2 + '<br>');
+        var x = 1e308;
+        document.write(x + '<br>');
+        document.write(x * 2 + '<br>');
+        var a = 8;
+        var b = "Daniel";
+        document.write("a=" + a + '<br>');
+        document.write("b=" + b + '<br>');
+        document.write("a+b=" + (a + b) + '<br>');
+        document.write("a*b=" + (a * b) + '<br>');
+        document.write("0/0=" + 0 / 0 + '<br>');
+        document.write("isNaN(1e308*2)=" + isNaN(1e308 * 2) + '<br>');
+        var name = "Daniel";
+        var age = 8;
+        if (isNaN(name)) {
+            alert("不是数字");
+        } else {
+            alert("是数字")
+        }
+        if (isNaN(age)) {
+            alert("不是数字");
+        } else {
+            alert("是数字")
+        }
+    </script>
+    <style type="text/css">
+        .box1 {
+            position: fixed;
+            top: 0px;
+            right: 25px;
+            margin: auto;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"><a href="index.html">返回主页</a></div>
+</body>
+
+</html>

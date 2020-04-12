@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM对象实现网页中增大缩小字体</title>
+    <style type="text/css">
+        .box1 {
+            position: fixed;
+            top: 0px;
+            right: 25px;
+            margin: auto;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"><a href="index.html">返回主页</a></div>
+    <div id="main">
+        <div>我是第一个子节点。我将会变大</div>
+        <p>我是第二个子节点。</p>
+        <span>我是第三个子节点。我将会变小</span>
+    </div>
+</body>
+<script>
+    var main = document.getElementById('main');
+    var mainChildNodes = main.children;
+    var link1 = mainChildNodes[0];
+    link1.style.fontSize = "28px";
+    var link2 = mainChildNodes[2];
+    link2.style.fontSize = "12px";
+</script>
+
+</html>
